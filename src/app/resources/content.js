@@ -2,18 +2,18 @@ import { InlineCode } from "@/once-ui/components";
 
 const person = {
     firstName: 'Luca',
-    lastName:  'Lapenna',
+    lastName: 'Lapenna',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Software Developer',
-    avatar:    '/images/me.jpg',
-    location:  'America/Montreal',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    role: 'Software Developer',
+    avatar: '/images/avatar.jpg',
+    location: 'America/Montreal',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'French', "Italian"]  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Developer and Enthusiast</>,
-    subline: <>I'm Selene, a software developer at <InlineCode>Unitronic</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    subline: <>I'm {person.name}, a software developer at <InlineCode>Unitronic</InlineCode>, where I craft intuitive<br /> user experiences. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -69,9 +69,9 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>{person.firstName} is a dedicated software developer with a deep-seated passion for crafting intuitive, 
-        high-performance digital experiences. With expertise spanning user interface (UI) to data structures and visualization, 
-        {person.firstName} has a talent for transforming complex challenges into elegant, effective solutions that blend design with cutting-edge technology. 
+        description: <>{person.firstName} is a dedicated software developer with a deep-seated passion for crafting intuitive,
+            high-performance digital experiences. With expertise spanning user interface (UI) to data structures and visualization,
+            {person.firstName} has a talent for transforming complex challenges into elegant, effective solutions that blend design with cutting-edge technology.
         </>
     },
     work: {
@@ -79,32 +79,64 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Unitronic',
+                timeframe: 'July 2022 - Present',
+                role: 'Electronics Assembler ',
                 achievements: [
-                    <>UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Assemble electronic components, including circuit boards, and wiring harnesses</>,
+                    <>Inspect and test incoming and assembled components</>,
+                    <>Troubleshooting and resolve issues with defective components</>,
+                    <>Package products and manage inventory</>,
+                    <>Quality control on carbon fiber and stainless steel </>,
+
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/work/ucp_cable.jpg',
+                        alt: 'Unitronic Uni Connect Plus cable',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/work/Unitronic Carbon Fiber Air Duct.jpg',
+                        alt: 'Unitronic_Carbon_Fiber_Air_Duct',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/work/inlet.jpg',
+                        alt: 'inlet',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                company: 'Unitronic',
+                timeframe: 'July 2022 - Present',
+                role: 'Software Developer',
+                achievements: [
+                    <>Develop programs that identify and troubleshoot assembled circuit boards and wiring harnesses</>,
+                    <>Developing front-end applications to remotely tune customer vehicles</>,
+                    <>Build desktop applications to analyze large datasets</>,
+                    <>Assist in optimization and structure of translation algorithms from binary to json</>,
+
+                ],
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/work/custom_tune_3.png',
+                        alt: 'Custom tune website 1',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/work/custom_tune_2.png',
+                        alt: 'Custom tune website 3',
                         width: 16,
                         height: 9
                     }
                 ]
             },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
-            }
         ]
     },
     studies: {
@@ -113,7 +145,7 @@ const about = {
         institutions: [
             {
                 name: 'Concordia University',
-                description: <>Currently Studying Software Engineering</>,
+                description: <>Currently Studying Software Engineering (2024-Present)</>,
             },
             {
                 name: 'Vanier College',
@@ -121,6 +153,7 @@ const about = {
             }
         ]
     },
+    // TODO: Add your own content
     technical: {
         display: true, // set to false to hide this section
         title: 'Technical skills',
@@ -181,73 +214,73 @@ const gallery = {
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
+        {
+            src: '/images/gallery/img-01.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-02.jpg', 
+        {
+            src: '/images/gallery/img-02.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-03.jpg', 
+        {
+            src: '/images/gallery/img-03.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-04.jpg', 
+        {
+            src: '/images/gallery/img-04.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-05.jpg', 
+        {
+            src: '/images/gallery/img-05.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-06.jpg', 
+        {
+            src: '/images/gallery/img-06.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-07.jpg', 
+        {
+            src: '/images/gallery/img-07.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-08.jpg', 
+        {
+            src: '/images/gallery/img-08.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-09.jpg', 
+        {
+            src: '/images/gallery/img-09.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-10.jpg', 
+        {
+            src: '/images/gallery/img-10.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-11.jpg', 
+        {
+            src: '/images/gallery/img-11.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
+        {
+            src: '/images/gallery/img-12.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-13.jpg', 
+        {
+            src: '/images/gallery/img-13.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-14.jpg', 
+        {
+            src: '/images/gallery/img-14.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
