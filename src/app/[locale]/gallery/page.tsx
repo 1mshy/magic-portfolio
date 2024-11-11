@@ -54,9 +54,8 @@ export default function Gallery(
 						{gallery.description} 
 					</Heading>
 			</div>
-		
+		<div>
         <Flex fillWidth>
-			
             <script
 				type="application/ld+json"
 				suppressHydrationWarning
@@ -85,6 +84,6 @@ export default function Gallery(
 			/>
 			
             <MasonryGrid/>
-        </Flex></div>
+        </Flex></div></div>
     );
 }

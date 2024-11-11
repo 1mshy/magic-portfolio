@@ -212,7 +212,7 @@ const work = {
 const gallery = {
     label: 'Gallery',
     title: 'My project gallery',
-    description: `Beautiful work doesn't need documentation, just shown`,
+    description: `Beautiful work doesn't need documentation, just a light`,
     // Images from https://pexels.com
     images: [
         {
@@ -221,7 +221,17 @@ const gallery = {
             orientation: 'horizontal'
         },
         {
-            src: '/images/projects/investor-dreams/playground1.png',
+            src: '/images/projects/investor-dreams/finance-sector.png',
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        {
+            src: '/images/projects/investor-dreams/aapl-search.png',
+            alt: 'image',
+            orientation: 'horizontal'
+        },
+        {
+            src: '/images/projects/investor-dreams/big-aapl.png',
             alt: 'image',
             orientation: 'horizontal'
         },
