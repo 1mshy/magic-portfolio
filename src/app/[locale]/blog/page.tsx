@@ -73,7 +73,8 @@ export default function Blog(
 					}),
 				}}
 			/>
-            <Heading
+			{/* Old blog logic */}
+            {/* <Heading
                 marginBottom="l"
                 variant="display-strong-s">
                 {blog.title}
@@ -85,7 +86,20 @@ export default function Blog(
 			</Flex>
             {newsletter.display && (
                 <Mailchimp newsletter={newsletter} />
-            )}
+            )} */}
+			<Heading
+                marginBottom="l"
+                variant="display-strong-s">
+                Experiences awaiting to come 
+            </Heading>
+			<Flex
+				fillWidth flex={1} direction="column">
+					Soon enough.
+			</Flex>
+			{/* 
+            {newsletter.display && (
+                <Mailchimp newsletter={newsletter} />
+            )} */}
         </Flex>
     );
 }

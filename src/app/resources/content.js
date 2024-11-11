@@ -48,7 +48,8 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Developer and Enthusiast</>,
-    subline: <>I'm {person.name}, a software developer at <InlineCode>Unitronic</InlineCode>, where I craft intuitive<br /> user experiences. After hours, I build my own projects.</>
+    subline: <>I'm {person.name}, a software developer at <InlineCode>Unitronic</InlineCode>, where I craft intuitive 
+    user experiences. After hours, I dive into expanding on my own projects.</>
 }
 
 const about = {
@@ -159,8 +160,8 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Web Development',
+                description: <>Able to create visually appealing and reactive weblications for the browser</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
@@ -177,8 +178,8 @@ const about = {
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Scripting',
+                description: <>Create scripts and tools to analyse large amounts of data</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',
@@ -210,80 +211,35 @@ const work = {
 
 const gallery = {
     label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
+    title: 'My project gallery',
+    description: `Beautiful work doesn't need documentation, just shown`,
     // Images from https://pexels.com
     images: [
         {
-            src: '/images/gallery/img-01.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-02.jpg',
+            src: '/images/projects/investor-dreams/playground2.png',
             alt: 'image',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-03.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-04.jpg',
+            src: '/images/projects/investor-dreams/playground1.png',
             alt: 'image',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-05.jpg',
+            src: '/images/gallery/img-01.png',
             alt: 'image',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-06.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-07.jpg',
+            src: '/images/gallery/img-02.png',
             alt: 'image',
             orientation: 'horizontal'
         },
         {
-            src: '/images/gallery/img-08.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-09.jpg',
+            src: '/images/gallery/img-03.png',
             alt: 'image',
             orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-10.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-11.jpg',
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        {
-            src: '/images/gallery/img-12.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-13.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        {
-            src: '/images/gallery/img-14.jpg',
-            alt: 'image',
-            orientation: 'horizontal'
-        },
+        }
     ]
 }
 

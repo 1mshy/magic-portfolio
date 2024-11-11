@@ -1,4 +1,4 @@
-import { Flex } from "@/once-ui/components";
+import { Flex, Heading } from "@/once-ui/components";
 import MasonryGrid from "@/components/gallery/MasonryGrid";
 import { baseURL, renderContent } from "@/app/resources";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -46,7 +46,17 @@ export default function Gallery(
 	const t = useTranslations();
 	const { gallery, person } = renderContent(t);
     return (
+		<div>
+			<div>
+			<Heading
+						marginBottom="l"
+						variant="display-strong-s">
+						{gallery.description} 
+					</Heading>
+			</div>
+		
         <Flex fillWidth>
+			
             <script
 				type="application/ld+json"
 				suppressHydrationWarning
@@ -73,7 +83,8 @@ export default function Gallery(
 					}),
 				}}
 			/>
+			
             <MasonryGrid/>
-        </Flex>
+        </Flex></div>
     );
 }
