@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withMDX = mdx({
     extension: /\.mdx?$/,
-    options: {},
+    options: { },
 });
 
 const withNextIntl = createNextIntlPlugin();
@@ -16,6 +16,5 @@ const nextConfig = {
     trailingSlash: true, // Optional: Ensures cleaner URLs
 };
 
-module.exports = nextConfig;
 
 export default withNextIntl(withMDX(nextConfig));
