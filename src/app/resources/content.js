@@ -52,7 +52,7 @@ const social = [
     {
         name: "Email",
         icon: "email",
-        link: "lucalapenna17@gmail.com",
+        link: "https://www.linkedin.com/in/luca-lapenna",
     },
 ];
 
@@ -83,7 +83,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: "https://cal.com",
+        link: "https://www.linkedin.com/in/luca-lapenna",
     },
     intro: {
         display: true,
@@ -201,7 +201,7 @@ const about = {
             },
         ],
     },
-    // TODO: Add your own content
+    // TODO: Add my own content
     technical: {
         display: true, // set to false to hide this section
         title: "Technical skills",
@@ -216,13 +216,13 @@ const about = {
                 ),
                 images: [
                     {
-                        src: "/images/projects/project-01/cover-02.jpg",
+                        src: "/images/projects/investor-dreams/homepage.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/projects/project-01/cover-03.jpg",
+                        src: "/images/projects/investor-dreams/investor_dreams_opening.mp4",
                         alt: "Project image",
                         width: 16,
                         height: 9,
@@ -239,7 +239,7 @@ const about = {
                 ),
                 images: [
                     {
-                        src: "/images/projects/project-01/cover-04.jpg",
+                        src: "/images/projects/investor-dreams/tradingview-chart.png",
                         alt: "Project image",
                         width: 16,
                         height: 9,
@@ -273,17 +273,42 @@ const gallery = {
     // Images from https://pexels.com
     images: [
         {
+            src: "/images/projects/investor-dreams/homepage.png",
+            alt: "image",
+            orientation: "horizontal",
+        },
+        {
             src: "/images/projects/investor-dreams/playground2.png",
             alt: "image",
             orientation: "horizontal",
         },
         {
-            src: "/images/projects/investor-dreams/finance-sector.png",
+            src: "/images/projects/investor-dreams/playground.png",
             alt: "image",
             orientation: "horizontal",
         },
         {
-            src: "/images/projects/investor-dreams/aapl-search.png",
+            src: "/images/projects/investor-dreams/search.png",
+            alt: "image",
+            orientation: "horizontal",
+        },
+        {
+            src: "/images/projects/investor-dreams/summary.png",
+            alt: "image",
+            orientation: "horizontal",
+        },
+        {
+            src: "/images/projects/investor-dreams/tradingview-chart.png",
+            alt: "image",
+            orientation: "horizontal",
+        },
+        {
+            src: "/images/projects/investor-dreams/heatmap.png",
+            alt: "image",
+            orientation: "horizontal",
+        },
+        {
+            src: "/images/projects/investor-dreams/search.png",
             alt: "image",
             orientation: "horizontal",
         },

@@ -146,13 +146,13 @@ const createI18nContent = (t) => {
                     ),
                     images: [
                         {
-                            src: "/images/projects/project-01/cover-02.jpg",
+                            src: "/images/projects/project-01/homepage.png",
                             alt: "Project image",
                             width: 16,
                             height: 9,
                         },
                         {
-                            src: "/images/projects/project-01/cover-03.jpg",
+                            src: "/images/projects/project-01/investor_dreams_opening.mp4",
                             alt: "Project image",
                             width: 16,
                             height: 9,
@@ -166,7 +166,7 @@ const createI18nContent = (t) => {
                     ), // "." not accepted in next-intl namespace
                     images: [
                         {
-                            src: "/images/projects/project-01/cover-04.jpg",
+                            src: "/images/projects/project-01/tradingview-chart.png",
                             alt: "Project image",
                             width: 16,
                             height: 9,
