@@ -16,46 +16,8 @@ const person = {
         "Javascript",
         "Rust",
         "Go",
-        "C++",
     ],
 };
-
-const newsletter = {
-    display: false,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: (
-        <>
-            I occasionally write about design, technology, and share thoughts on
-            the intersection of creativity and engineering.
-        </>
-    ),
-};
-
-const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
-    {
-        name: "GitHub",
-        icon: "github",
-        link: "https://github.com/1mshy/",
-    },
-    {
-        name: "LinkedIn",
-        icon: "linkedin",
-        link: "https://www.linkedin.com/in/luca-lapenna",
-    },
-    {
-        name: "X",
-        icon: "x",
-        link: "",
-    },
-    {
-        name: "Email",
-        icon: "email",
-        link: "https://www.linkedin.com/in/luca-lapenna",
-    },
-];
-
 const home = {
     label: "Home",
     title: `${person.name}'s Portfolio`,
